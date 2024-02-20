@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const UserModel = require('./models/users');
 
-mongoose.connect("mongodb+srv://mbitsiedward:nMWYlFrx45L8Q2jY@cluster0.rkkdpfa.mongodb.net/mernstack?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://:@cluster0.rkkdpfa.mongodb.net/mernstack?retryWrites=true&w=majority");
 
 app.get("/getUsers", (req, res) => {
     UserModel.find({}, (err, result) => {
