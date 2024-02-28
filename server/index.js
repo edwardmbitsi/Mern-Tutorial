@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const UserModel = require('./models/users');
 
-mongoose.connect("mongodb+srv://mbitsiedward:nMWYlFrx45L8Q2jY@cluster0.rkkdpfa.mongodb.net/mernstack?retryWrites=true&w=majority&appName=Cluster0");
+mongoose.connect("mongodb+srv://mbitsiedward:nMWYlFrx45L8Q2jY@cluster0.rkkdpfa.mongodb.net/mernstack?retryWrites=true&w=majority");
 
 // Use async/await syntax to handle asynchronous operations
 app.get("/getUsers", async (req, res) => {
